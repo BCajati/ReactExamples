@@ -1,5 +1,6 @@
 import React from "react"
 import ReminderTable from './ReminderTable'
+import ReminderForm from './ReminderForm'
 
 
 class DateReminder extends React.Component{
@@ -13,10 +14,20 @@ class DateReminder extends React.Component{
         }
     }
 
+    handleSubmit = (reminder) =>{
+        this.setState({
+            reminders: [...this.state.reminders, reminder]
+
+        })
+
+    }
+
     render(){
         return(
             <div>
             <ReminderTable eventData={this.state.reminders}/>
+            <br />
+            <ReminderForm onSubmit={this.handleSubmit}/>
             </div>
         )
     }

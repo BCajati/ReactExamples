@@ -10,6 +10,7 @@ import About from './About'
 import Home from './Home'
 import Features from './Features'
 import NextSteps from './NextSteps'
+import Dates from './Dates'
 
 
 import {
@@ -56,6 +57,10 @@ const App = () => (
       </Route>
       <Route path="/next">
         <NextSteps />
+      </Route>
+      <Route path="/dates">
+        <Dates />
+
       </Route>
     </switch>
 

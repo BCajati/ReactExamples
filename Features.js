@@ -24,12 +24,19 @@ class Features extends React.Component{
               <Card.Text>
                 Beginner Project - Date Reminder.
               </Card.Text>
-              {/* <Button variant="primary">Go somewhere</Button> */}
               <Card.Link href="/reminders">See Project</Card.Link>
             </Card.Body>
-          </Card>
-
-          <DateReminder />
+          </Card> 
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" />
+            <Card.Body>
+              <Card.Title>Working with Dates</Card.Title>
+              <Card.Text>
+                Date Operations
+              </Card.Text>
+              <Card.Link href="/dates">See Project</Card.Link>
+            </Card.Body>
+          </Card>       
 
           <Card style={{ width: '18rem' }}>
             <Card.Body>
@@ -44,11 +51,11 @@ class Features extends React.Component{
             </Card.Body>
             </Card>
             <br />
-                <switch>
+                {/* <switch>
                 <Route path="/reminders">
                     <DateReminder />
                 </Route>
-                </switch>
+                </switch> */}
             </Router>
           </div>
           
